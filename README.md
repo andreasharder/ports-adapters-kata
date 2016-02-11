@@ -1,7 +1,9 @@
 ports-adapters-kata
 ===============
 
-This project is an TDD kata with javas script using Mocha and Chai.
+Solution for an TDD kata with JavaScript using Mocha and Chai:
+
+[repo](https://github.com/swkBerlin/ports-and-adapters)
 
 
 ###Install Dependencies
@@ -17,4 +19,4 @@ Single test run
 
 Starts a watcher
 
-	npm run-script watch
+	npm run watch
