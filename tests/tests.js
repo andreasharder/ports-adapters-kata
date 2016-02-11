@@ -20,16 +20,15 @@ describe("WeatherService", function(){
     });
 });
 
-// testing Asynchronous Code
 describe("FileCreator", function(){
 
     var CSV_STRING = 'a;b\na1;b1\na2;b2\n',
         FILE_NAME = 'my.csv',
         fc;
 
-    beforeEach(function(done) {
+    beforeEach(function() {
         fc = new FileCreator();
-        fc.create(CSV_STRING, FILE_NAME, done);
+        fc.create(CSV_STRING, FILE_NAME);
     });
 
     it('should write to file', function(done) {
