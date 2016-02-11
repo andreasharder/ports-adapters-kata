@@ -1,11 +1,12 @@
-var Converter = require('../converter');
 
-var Application = function() {
+var Application = function(source, sink, converter) {
     this.source = source;
     this.sink = sink;
-    this.converter = new Converter();
+    this.converter = converter;
 };
 
 Application.prototype.run = function () {
-    // body...
+    //Todo
 };
+
+module.exports = Application;
