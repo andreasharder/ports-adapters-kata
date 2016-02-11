@@ -6,6 +6,7 @@ var expect = require('chai').expect,
 
     var WEATHER_URL = 'http://apis.is/weather/observations/en';
 
+// testing Asynchronous Code
 describe("WeatherService", function(){
 
     it('should return the observations', function(done) {
@@ -19,6 +20,7 @@ describe("WeatherService", function(){
     });
 });
 
+// testing Asynchronous Code
 describe("FileCreator", function(){
 
     var CSV_STRING = 'a;b\na1;b1\na2;b2\n',

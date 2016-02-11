@@ -1,9 +1,9 @@
 var fs = require('fs');
 
-var FileCrator = function() {
+var FileCreator = function() {
 };
 
-FileCrator.prototype.create = function(csv_string, fileName, callback) {
+FileCreator.prototype.create = function(csv_string, fileName, callback) {
 
     fs.writeFile(fileName, csv_string, function(err) {
         if(err) {
@@ -14,4 +14,4 @@ FileCrator.prototype.create = function(csv_string, fileName, callback) {
     callback();
 };
 
-module.exports = FileCrator;
+module.exports = FileCreator;
